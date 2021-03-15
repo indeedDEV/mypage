@@ -25,6 +25,19 @@
   margin-right: auto;
   width: 50%;
 }
+    
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+    .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
   </style>
   
@@ -84,9 +97,17 @@
    
    <!-- Pictures -->
    
-  <img src="https://i.redd.it/e5oda49v80n61.jpg" alt="hi" class="responsive" style="width=180; margin:50px 0px">
-  <img src="https://i.redd.it/k9ohpegll0n61.jpg" alt="hi" class="responsive" style="width=180; margin:50px 0px">
-  <img src="https://i.redd.it/7luc8mtk31n61.png" alt="hi" class="responsive" style="width=180; margin:50px 0px">
+   <div class="row">
+  <div class="column">
+  <img src="https://i.redd.it/e5oda49v80n61.jpg" alt="hi" class="responsive" width="200" style="margin:50px 0px">
+     </div>
+  <div class="column">
+  <img src="https://i.redd.it/k9ohpegll0n61.jpg" alt="hi" class="responsive" width="200" style="margin:50px 0px">
+     </div>
+  <div class="column">
+  <img src="https://i.redd.it/7luc8mtk31n61.png" alt="hi" class="responsive" width="200" style="margin:50px 0px">
+     </div>
+   </div>
    
  </center>
   
