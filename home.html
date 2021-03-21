@@ -1,116 +1,166 @@
-<!DOCTYPE html>
-
-<html>
+<html lang="en-us">
   
 <head>
   
-  <link rel="icon" href="https://cdn.discordapp.com/avatars/509554361802948619/14a180809d2913c76a4f9eeef65c4507.webp?size=1024">
+  <title lang="en-us">indeed - Home</title>
+  <meta name="description" content="Hi, call me indeed.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="c++, cpp, c plus plus, discord, bot, c, html, python, game, development, games, developer">
+  <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/attachments/807712183470653461/823031894547496970/justi.png"/>
   
-  <style>
-    
-  .responsive {
-  width: "180";
-  height: auto;
-}
-    
-    img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-    
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-    
-    .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+<style>
+  
+body {
+background-color: #18191A;
+  }
+.header {
+background-color: #363636;
+width: 100%;
+height: 40px;
+  }
+.header-text {
+color: #FFFFFF;
+font-family: Helvetica;
+  }
+.tiny-text {
+color: #FFFFFF;
+font-family: Comic Sans MS;
+font-size: 17px;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* Clearfix (clear floats) */
-    .row::after {
-  content: "";
-  clear: both;
-  display: table;
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.home-pic {
+width: 100%;
+height: 650px;
+  }
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 35px;
+}
+.nav-text {
+color: white;
+font-family: Verdana;
+font-weight: 10px;
+  }
+.img {
+width: 75px;
+height: 75px;
+  }
+.tiny-text {
+color: white;
+font-family: Verdana;
+  }
+ .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2f2f2f;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #03C04A; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
   </style>
-  
-</head>
-  
-<body>
-  
- <center>
-   
-   <!-- Avatar Icon -->
-  <img src="https://cdn.discordapp.com/avatars/509554361802948619/14a180809d2913c76a4f9eeef65c4507.webp?size=1024" alt="Avatar" class="responsive;center" height="180" width="180" style="border-radius: 50%;">
-   
-   <!-- My Name -->
-  <img src="https://fontmeme.com/permalink/210314/2462fb1ee534554887fbebcdc25674fe.png" alt="hi" class="responsive" style="margin:50px 0px">
-  
-   <!-- GitHub Button -->
-   <a href="https://github.com/indeedDEV"> 
-    <button style="background-color: #555555; color: white; padding: 12px 24px; font-size: 16px; cursor: pointer;border-radius: 16px;">
-      <img src="https://cdn.discordapp.com/attachments/813516392459927612/820843746853388328/github_PNG40.png" alt="GitHub" class="responsive;center" height="30" width=auto>
-      GitHub
-    </button>
-   </a>
-    
-   <!-- BERET Button -->
-   <a href="https://indeeddev.github.io/BERET/commands"> 
-    <button style="background-color: #555555; color: white; padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 16px;">
-      <img src="https://cdn.discordapp.com/avatars/807641111140499466/7d2bc426bafcb063554660d5c7666cea.webp?size=1024" alt="BERET" class="responsive;center" height="30" width=auto>
-      BERET
-    </button>
-   </a>
-   
-   <!-- Steam Button -->
-   <a href="https://steamcommunity.com/id/indeedDEV/"> 
-    <button style="background-color: #555555; color: white; padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 16px;">
-      <img src="https://cdn.discordapp.com/attachments/813516392459927612/820851797828304906/steam-icon-19.png" alt="Steam" class="responsive;center" height="30" width=auto>
-      Steam
-    </button>
-   </a>
-   
-   <!-- YouTube -->
-   <a href="https://www.youtube.com/channel/UCg37vzf4MtPWiWx061Ac0lg"> 
-    <button style="background-color: #555555; color: white; padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 16px;">
-      <img src="https://cdn.discordapp.com/attachments/813516392459927612/820857302369828894/580b57fcd9996e24bc43c545.png" alt="YT" class="responsive;center" height="30" width=auto>
-      YouTube
-    </button>
-   </a>
-    
-   <!-- Bio -->
-    <p style="color: #66ff33; background-color: #555555; border-radius: 16px;">
-      <code>
-      CS:GO R6 ROR2 C++ PYTHON
-      </code>
-   </p>
-   
-   <br>
-   <br>
-   
-   <!-- Pictures -->
-   <!--
-   <div class="row">
-  <div class="column">
-  <img src="https://i.redd.it/e5oda49v80n61.jpg" alt="hi" class="responsive" width="200" style="margin:50px 0px">
-     </div>
-  <div class="column">
-  <img src="https://i.redd.it/k9ohpegll0n61.jpg" alt="hi" class="responsive" width="200" style="margin:50px 0px">
-     </div>
-  <div class="column">
-  <img src="https://i.redd.it/7luc8mtk31n61.png" alt="hi" class="responsive" width="200" style="margin:50px 0px">
-     </div>
-   </div>-->
-   
- </center>
-  
-</body>
-  
+<script>
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+  // When someone clicks on a close button
+  close[i].onclick = function(){
+
+    // Get the parent of <span class="closebtn"> (<div class="alert">)
+    var div = this.parentElement;
+
+    // Set the opacity of div to 0 (transparent)
+    div.style.opacity = "0";
+
+    // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+  </head>
+<body a link="black" vlink="black">
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <p class='header-text'>See our Latest Article: Treatbot (Discontinued)</p>
+</div>
+<header class='header';>
+  <center><h1 class="header-text">AriesTropixDev Official Web</h1></center>
+  </header>
+<center>
+  <ul>
+  <li><a class="nav-text" href="home.html">Home</a></li>
+  <li><a class="nav-text" href="news.html">News</a></li>
+  <li><a class="nav-text" class="nav-text" href="contact.html">Contact</a></li>
+  <li><a class="nav-text" href="about.html">About</a></li>
+</ul>
+  </center>  
+<center>
+<div class="container";>
+<img src="https://cutewallpaper.org/21/cool-gif-wallpapers/Blue-background-GIFs-Get-the-best-GIF-on-GIPHY.gif" class="home-pic">
+<div class="center-text">Welcome to AriesTropixDev Official Web!</div>
+  </div>
+  </center>                                                                                                 
+  </body>
 </html>
